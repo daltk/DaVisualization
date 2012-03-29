@@ -1,0 +1,8 @@
+development:
+  host: localhost
+  adapter: postgresql
+  database: store_dev
+  username: hubworks
+  password: vegpuf
+## YAML Template.
+

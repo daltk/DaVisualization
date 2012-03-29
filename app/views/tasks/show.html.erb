@@ -1,0 +1,22 @@
+<h1>Task</h1>
+
+<p>
+  <b>Description</b><br>
+  <%= @task.description %>
+</p>
+
+<p>
+  <b>Deadline</b><br>
+  <%= @task.deadline %>
+</p>
+
+<p>
+  <b>Status</b><br>
+  <%= @task.status %>
+</p>
+
+<div class="form-actions">
+  <%= link_to 'Back', tasks_path, :class => 'btn'  %>
+  <%= link_to 'Edit', edit_task_path(@task), :class => 'btn' %>
+  <%= link_to 'Delete', task_path(@task), :method => 'delete', :confirm => 'Are you sure?', :class => 'btn btn-danger' %>
+</div>
